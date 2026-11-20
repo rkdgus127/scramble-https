@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <title>Scramble</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+  <header>
+    <a class="logo" href="#">scramble<span>.</span></a>
+    <span class="version">TEXT RANDOMIZER</span>
+  </header>
+
+  <section class="input-section">
+    <label for="input">INPUT TEXT</label>
+
+    <textarea
+      id="input"
+      placeholder="스크램블할 문장을 입력하세요."
+    ></textarea>
+
+    <div class="input-bottom">
+      <span id="charCount">0 characters</span>
+      <button id="scrambleButton">
+        Scramble <span>↗</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="config-section">
+
+    <div class="section-heading">
+      <span>CONFIGURATION</span>
+      <span class="saved">AUTO SAVE</span>
+    </div>
+
+    <div class="config-row">
+      <div>
+        <div class="config-name">스크램블 횟수</div>
+        <div class="config-desc">생성할 결과 개수</div>
+      </div>
+      <input id="count" type="number" min="1" max="100" value="10">
+    </div>
+
+    <div class="config-row">
+      <div>
+        <div class="config-name">글자별 랜덤 색상</div>
+        <div class="config-desc">RGB 색상을 무작위로 적용</div>
+      </div>
+      <label class="switch">
+        <input id="colors" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="config-row">
+      <div>
+        <div class="config-name">공백 무작위 배치</div>
+        <div class="config-desc">공백 위치 변경</div>
+      </div>
+      <label class="switch">
+        <input id="spaces" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="config-row">
+      <div>
+        <div class="config-name">문장부호 스크램블</div>
+        <div class="config-desc">문장부호도 섞기</div>
+      </div>
+      <label class="switch">
+        <input id="punctuation" type="checkbox" checked>
+        <span></span>
+      </label>
+    </div>
+
+  </section>
+
+  <section class="results-section">
+
+    <div class="results-heading">
+      <div>
+        <span class="section-heading">RESULTS</span>
+        <span id="resultCount">0</span>
+      </div>
+
+      <button id="copyAllButton" disabled>전체 복사</button>
+    </div>
+
+    <div id="results">
+
+      <div class="empty">
+        <span>✳</span>
+        <p>아직 결과가 없습니다.</p>
+        <small>문장을 입력하고 Scramble을 눌러주세요.</small>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    SCRAMBLE TEXT RANDOMIZER
+  </footer>
+
+  <div id="toast"></div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
