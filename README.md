@@ -1,4 +1,4 @@
-# scramble
+# Character Mix
 [![Website](https://img.shields.io/badge/Website-Visit-8A2BE2?style=flat-square&logo=googlechrome&logoColor=white)](https://rkdgus127.github.io/scramble-https/)
 [![HTML](https://img.shields.io/badge/HTML-5-E34F26?style=flat-square&logo=html5&logoColor=E34F26)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS-3-1572B6?style=flat-square&logo=css3&logoColor=1572B6)](https://developer.mozilla.org/en-US/docs/Web/CSS)
